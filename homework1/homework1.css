@@ -1,0 +1,119 @@
+
+body,h1,h4,ul{	
+    margin: 0;
+    padding: 0;
+}
+.header {
+    height: 100px;
+}
+.header-content {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    border-bottom: 1px solid #ececec;
+    background-color: white;
+}
+.nav-logo {
+ float: left;
+ margin: 10px;
+}
+.nav-logo img{
+    width: 80px;
+    vertical-align: middle;
+}
+.nav-name{
+    font-family: "Oswald", serif;
+    display: inline-block;
+    margin-left: 10px;
+}
+.nav-button{
+    float: right;
+    margin-top: 28px;
+    margin-right: 10px;
+}
+.nav-button a{
+    padding: 10px;
+    text-align: center;
+    color: rgb(226,28,35);
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Nunito Sans,system-ui,sans-serif;
+    border: 1px solid rgb(226,28,35);
+    border-radius: 4px;
+    cursor: pointer;
+}
+.nav-button a:hover {
+   background: rgb(226,28,35);
+   color: white;
+}
+
+.main-content {
+    text-align: center;
+    margin: 20px 0;
+}
+.main-title{
+    margin-bottom: 10px;
+}
+.subtitle{
+    font-family: "Fira Mono", Monospace;
+    color: rgb(226,28,35);
+    font-style: italic;
+    text-indent: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.banner {
+    width: 100%;
+    max-width: 640px;
+    margin-top:15px;
+    display: inline-block;
+}
+.text{
+  max-width: 640px;
+  margin: 0 auto;
+}
+.text p {
+  max-width: 640px;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+.text ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: "fira mono";
+    text-align: center;
+  }
+.text ul li {
+    color: white;
+    background-color: rgb(226,28,35);
+    border-radius: 10px;
+    display: inline-block;
+    padding: 3px 12px;
+    margin: 5px;
+    border-bottom: 2px solid rgb(226,28,35);
+  }
+
+.footer {
+    height: 60px;
+    border-top: 1px solid #ececec;
+    text-align: center;
+}
+.footer a {
+    color: black;
+}
+.footer span {
+    font-weight: 600;
+}
+.footer a:hover {
+ color: red;
+}
+
+

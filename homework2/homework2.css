@@ -1,0 +1,125 @@
+body, h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px 0;
+}
+.link {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 15px;
+  line-height: 1.5;
+}
+button {
+ border: none;
+ cursor: pointer;
+ line-height: 1.5;
+}
+.link-button {
+  width: 100%;
+  border-radius: 5px;
+  color: #000;
+  display: block;
+  font-size: 24px;
+  padding: 10px 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Fonts */
+.merriweather { 
+    font-family: 'Merriweather', serif; 
+}
+.oswald { 
+    font-family: 'Oswald', sans-serif; 
+}
+.lato { 
+    font-family: 'Lato', sans-serif;
+ }
+
+ /* header style */
+.top-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  padding: 10px 30px;
+  border-bottom: 5px solid #f2ff00;
+}
+
+.top-header h1{
+    color: #f2ff00;
+    font-size: 32px;
+}
+.header-list{
+  display: flex;
+  justify-content: flex-end;   
+  padding: 15px 0;
+}
+.header-list a {
+    color: white;
+    font-size: 20px;
+}
+
+/* content style */
+.main-title {
+  background-color: #adadad;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  font-size: 28px;
+  padding: 15px 0;
+  line-height: 1.5;
+}
+.strikeout {
+  text-decoration: line-through;
+}
+.underline {
+  border-bottom: 3px solid #f2ff00;
+}
+.main-banner{
+  height: 420px;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner-text{
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 25px;;
+  margin-right: 25px;
+  padding: 40px;
+  width: 380px;
+  height: 230px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+}
+.banner-text .link-button{
+  background-color: #f2ff00;
+  border-bottom: 2px solid #ffd900;
+}
+
+.main-text{
+ display: flex;
+ justify-content: center;
+}
+.text-container{
+  border-right: 1px solid lightgray;
+  margin: 20px 0;
+  padding: 2%;
+}
+.text-container:last-child{
+  border-right: none;
+}
+.text-container .link-button{
+  background-color: #adadad;
+  border-bottom: 2px solid #878787;
+}
+
+/* footer stylw */
+.footer-container{
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+}
