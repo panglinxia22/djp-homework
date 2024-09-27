@@ -30,6 +30,11 @@ p {
   line-height: 1.5;
 }
 
+.rover-hp-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 /* header style */
 .rover-header-container {
   height: 60px;
@@ -218,7 +223,36 @@ p {
   line-height: 36px;
 }
 
+/* Rover 1-2-3 */
+.rover-123-container {
+  padding: 15px;
+}
 
+.rover-123-container h2 {
+  text-align: center;
+  margin: 10px 0 20px;
+}
+
+.rover-123-item-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.rover-123-item {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.rover-123-item img {
+  width: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.rover-123-item-text h3 {
+  margin: 10px 0;
+}
 
 @media (min-width: 768px) {
 
@@ -287,4 +321,15 @@ p {
     left: 50px;
     top: -50px;
   }
+
+  /*Rover 1-2-3  */
+  .rover-123-item-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+  }
+
+  .rover-123-item {
+    flex-direction: column;
+  }
+
 }
