@@ -3,6 +3,7 @@ const citipixForm = document.getElementById('citipix-form');
 
 //  Listen for the form submit event
 citipixForm.addEventListener('submit', function (event) {
+
   // Prevent the default form submission behavior
   event.preventDefault();
   // Get the value of the input field
@@ -27,7 +28,7 @@ citipixForm.addEventListener('submit', function (event) {
     case 'san francisco':
     case 'bay area':
     case 'sf':
-      document.body.classList.add('nyc');
+      document.body.classList.add('sf');
       break;
 
     // LA conditional

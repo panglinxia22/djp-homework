@@ -15,38 +15,19 @@ function submenuHide() {
   submenu3.classList.remove('show');
 }
 
-// show first menu when your mouse enters the first menu button  
-function submenu1Show() {
+/**
+ * show submenu when your mouse enters the first menu button 
+ * @param  submenu 
+ */
+function submenuShow(submenu) {
   submenuHide();
-  submenu1.classList.add('show');
-}
-
-// show sencond menu when your mouse enters the sencond menu button 
-function submenu2Show() {
-  submenuHide();
-  submenu2.classList.add('show');
-}
-
-// show third menu when your mouse enters the third menu button 
-function submenu3Show() {
-  submenuHide();
-  submenu3.classList.add('show');
-}
-
-// Show sideMenu 
-function sideMenuShow() {
-  sideMenu.classList.add('show-menu');
-}
-
-// Hide sideMenu
-function sideMenuHide() {
-  sideMenu.classList.remove('show-menu');
+  submenu && submenu.classList.add('show');
 }
 
 // menuBtn hover event
-menuBtn1.addEventListener('mouseover', submenu1Show);
-menuBtn2.addEventListener('mouseover', submenu2Show);
-menuBtn3.addEventListener('mouseover', submenu3Show);
+menuBtn1.addEventListener('mouseenter', () => submenuShow(submenu1));
+menuBtn2.addEventListener('mouseenter', () => submenuShow(submenu2));
+menuBtn3.addEventListener('mouseenter', () => submenuShow(submenu3));
 
 // submenu mouseleave event
 submenu1.addEventListener('mouseleave', submenuHide);
@@ -54,8 +35,16 @@ submenu2.addEventListener('mouseleave', submenuHide);
 submenu3.addEventListener('mouseleave', submenuHide);
 
 // hamburgeMenu click event
-hamburgeMenu.addEventListener('click', sideMenuShow);
+hamburgeMenu.addEventListener('click', () => sideMenu.classList.toggle('show-menu'));
 
 // sideMenuClose click event
-sideMenuClose.addEventListener('click', sideMenuHide);
+sideMenuClose.addEventListener('click', () => sideMenu.classList.remove('show-menu'));
+
+// Escape key  keydown event
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    sideMenu.classList.remove('show-menu');
+  }
+});
+
 
